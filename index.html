@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            display:grid;
+            grid-template-columns: repeat(2,49.7vw);
+        }
+        .box{
+            width:49.7vw;
+            height:49.7vh;
+        }
+        .box img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .box h3{
+            font-size: 28px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .box p{
+            margin-top: 15px;
+            text-align: justify;
+        }
+        .pad{
+            width:calc(49.7vw - 40px);
+            height:calc(49.7vh - 40px);
+            padding:20px;
+        }
+        /*For Small device */
+        @media screen and (max-width:572px)
+            {
+                .container{
+                    grid-template-columns: 100vw;
+                }
+                .box{
+                    width:100vw;
+                    height:auto;
+                    }
+                .pad{
+                    width:calc(100vw - 40px);
+                    padding:20px;
+                    }
+                .position{
+                    position:relative;
+                    top:-588px;
+                }
+                .pos2{
+                    position:relative;
+                    top:271px;
+                }
+            }
+    </style>
+    <title>Responsive-05</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="city.jpg" alt="">
+        </div>
+        <div class="box pad">
+            <h3>Why do we use it?</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur assumenda eum rem quae dignissimos aut repellendus culpa veniam, corrupti impedit hic architecto in quisquam. Consequuntur corrupti, atque delectus hic saepe fugiat minus est praesentium blanditiis a dolor molestias quo optio aut! Velit blanditiis et qui dicta, in voluptates aperiam alias at est dignissimos nostrum numquam, inventore molestiae pariatur suscipit repellendus illum assumenda praesentium cumque saepe quasi maiores? Sint unde ut saepe quis laboriosam quibusdam accusamus beatae aliquid maiores eveniet autem assumenda sed fuga, natus similique est obcaecati excepturi quo sapiente ducimus ratione eligendi aperiam. Amet accusamus tempore facere in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero nesciunt molestias commodi? Vel dolorem ipsam numquam at expedita quas assumenda error cumque, explicabo architecto temporibus pariatur deleniti rem repellat, corporis nobis nostrum ipsum ipsa quam aliquam officia quae? Distinctio eaque veritatis voluptatem, sed illum neque excepturi et minima quod? Lorem, ipsum dolor sit amet consectetur adipisicing elit. In officiis ex a commodi ullam et, minus nesciunt nemo blanditiis inventore ratione explicabo perspiciatis doloribus voluptas sapiente rerum consequatur laudantium repudiandae!</p>
+        </div>
+        <div class="box pad pos2">
+            <h3>Why do we use it?</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur assumenda eum rem quae dignissimos aut repellendus culpa veniam, corrupti impedit hic architecto in quisquam. Consequuntur corrupti, atque delectus hic saepe fugiat minus est praesentium blanditiis a dolor molestias quo optio aut! Velit blanditiis et qui dicta, in voluptates aperiam alias at est dignissimos nostrum numquam, inventore molestiae pariatur suscipit repellendus illum assumenda praesentium cumque saepe quasi maiores? Sint unde ut saepe quis laboriosam quibusdam accusamus beatae aliquid maiores eveniet autem assumenda sed fuga, natus similique est obcaecati excepturi quo sapiente ducimus ratione eligendi aperiam. Amet accusamus tempore facere in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, esse temporibus corrupti odit aperiam in voluptatibus assumenda necessitatibus, aliquam libero blanditiis beatae explicabo. Adipisci ad nihil soluta iusto amet perferendis sint, assumenda accusamus in voluptas dignissimos aut. Totam, animi explicabo eos aut, velit illo similique dignissimos veritatis eius iure dolorem at nemo exercitationem nam aspernatur ut dolor repellendus est! Quam incidunt hic aliquam eveniet! Tempore neque ex iure fugit laudantium harum obcaecati natus facilis cum incidunt saepe, perferendis asperiores porro?</p>
+        </div>
+        <div class="box position">
+            <img src="beach.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
